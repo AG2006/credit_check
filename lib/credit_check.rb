@@ -4,6 +4,7 @@ card_number_to_integers = card_number.split(//).map do |digit|
   digit.to_i
 end
 
+# Doubles every other integer starting with the first
 doubled_card_number = card_number_to_integers.map.with_index do |digit, index|
   if index.even?
     digit * 2
@@ -12,6 +13,7 @@ doubled_card_number = card_number_to_integers.map.with_index do |digit, index|
   end
 end
 
+# Sums the digits if the integers with double digits
 summed_card_number = doubled_card_number.map do |digit|
   if digit > 9
     split_digit = digit.to_s.split(//).map {|dig| dig.to_i}
