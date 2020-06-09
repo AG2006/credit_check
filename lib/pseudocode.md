@@ -12,3 +12,8 @@
     - adding them together
     - adding them to array
 - sum the last array, check validity and print Output
+
+
+### Iteration 2
+
+- make a credit card class with given spec, use code in iteration 1 as helper methods

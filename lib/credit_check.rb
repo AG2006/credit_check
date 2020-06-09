@@ -1,10 +1,10 @@
-card_number = "6011797668867828"
+card_number = "5541808923795240"
 
-card_number_integers = card_number.split(//).map do |digit|
+card_number_to_integers = card_number.split(//).map do |digit|
   digit.to_i
 end
 
-doubled_card_number = card_number_integers.map.with_index do |digit, index|
+doubled_card_number = card_number_to_integers.map.with_index do |digit, index|
   if index.even?
     digit * 2
   else
@@ -30,7 +30,7 @@ else
 end
 
 
-#require 'pry'; binding.pry
+require 'pry'; binding.pry
 # Your Luhn Algorithm Here
 
 
